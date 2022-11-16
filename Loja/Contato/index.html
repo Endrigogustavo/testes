@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="PT-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact Form</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="navbar.css" />
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+    <script>
+      src="https://kit.fontawesome.com/64d58efce2.js"
+      crossorigin="anonymous"
+    </script>
+  </head>
+  <body>
+
+    <header>
+      <nav class="nav-bar">
+            <div class="logo">
+                <a href="#"><h1>AFFORDABLE TOYS</h1></a>
+              </div>
+  
+          <div class="nav-list">
+                   <ul>
+                      <li class="nav-item"><a href="#" class="nav-link">Início</a></li>
+                      <li class="nav-item"><a href="../Home/index.html" class="nav-link">Produtos</a></li>
+                      <li class="nav-item"><a href="../Contato/index.html" class="nav-link">Contato</a></li>
+                      <li class="nav-item"><a href="../Sobre nós/index.html" class="nav-link">Sobre Nós</a></li>
+                   </ul>
+                   <div class="login-button">
+                      <button><a href="Login.Html">Entrar</a></button></div>
+                        
+      <div class="mobile-menu-icon">
+          <button onclick="menuShow()"> <img class="icon" src="img/menu_white_36dp.svg"></button">
+          
+                  </div>
+  
+          </div>
+          </nav>
+  
+      </nav>
+      <div class="mobile-menu">
+          <ul>
+              <li class="nav-item"><a href="#" class="nav-link">Início</a></li>
+              <li class="nav-item"><a href="../Home/index.html" class="nav-link">Produtos</a></li>
+              <li class="nav-item"><a href="../Contato/index.html" class="nav-link">Contato</a></li>
+              <li class="nav-item"><a href="../Sobre nós/index.html" class="nav-link">Sobre Nós</a></li>
+          </ul>
+          <div class="login-button"> <button><a href="../Cadastro-Login/HTML/Login.Html">Entrar</a></button></div>
+      </div>
+  </div>
+  </header>
+
+    <div class="container-contact">
+      <span class="big-circle"></span>
+      <img src="img/shape.png" class="square" alt="" />
+      <div class="form">
+        <div class="contact-info">
+          <h3 class="title">Vamos entrar em contato!</h3>
+          <p class="text">
+            Nosso site tem o intuito de proporcionar a maior conectividade com o usuário. Por tanto, anexe seu feedback aqui e nos conte sua experiência.
+          </p>
+
+          <div class="info">
+            <div class="information">
+              <img src="img/location.png" class="icon" alt="" />
+              <p>Avenida Pasteur 520, São Paulo 04719-001</p>
+            </div>
+            <div class="information">
+              <img src="img/email.png" class="icon" alt="" />
+              <p>AffordableToys@gmail.com</p>
+            </div>
+            <div class="information">
+              <img src="img/phone.png" class="icon" alt="" />
+              <p>(55) 11 3456-7890</p>
+            </div>
+          </div>
+
+          <div class="social-media">
+            <p>Conecte-se conosco :</p>
+            <div class="social-icons">
+              <a href="https://www.facebook.com">
+                <i class="fab fa-facebook-f"></i>
+              </a>
+              <a href="https://twitter.com">
+                <i class="fab fa-twitter"></i>
+              </a>
+              <a href="https://www.instagram.com">
+                <i class="fab fa-instagram"></i>
+              </a>
+              <a href="https://www.linkedin.com">
+                <i class="fab fa-linkedin-in"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <div class="contact-form">
+          <span class="circle one"></span>
+          <span class="circle two"></span>
+
+          <form action="index.html" autocomplete="off">
+            <h3 class="title">Contate-nos</h3>
+            <div class="input-container">
+              <input type="text" name="name" class="input" />
+              <label for="">Usuário</label>
+              <span>Usuário</span>
+            </div>
+            <div class="input-container">
+              <input type="email" name="email" class="input" />
+              <label for="">Email</label>
+              <span>Email</span>
+            </div>
+            <div class="input-container">
+              <input type="tel" name="phone" class="input" />
+              <label for="">Celular</label>
+              <span>Celular</span>
+            </div>
+            <div class="input-container textarea">
+              <textarea name="message" class="input"></textarea>
+              <label for="">Mensagem</label>
+              <span>Mensagem</span>
+            </div>
+            <input type="submit" value="Enviar" class="btn" />
+          </form>
+        </div>
+      </div>
+    </div>
+
+    
+    <footer class="footer">
+      <div class="container">
+        <div class="row">
+          <div class="footer-col">
+            <h4>Empresa</h4>
+            <ul>
+              <li><a href="#">Sobre Nós</a></li>
+              <li><a href="#">Nossos Serviços</a></li>
+              <li><a href="#">Pólitica de Privacidade</a></li>
+            </ul>
+          </div>
+          <div class="footer-col">
+            <h4>Suporte</h4>
+            <ul>
+              <li><a href="#">FAQ</a></li>
+              <li><a href="#">Envio</a></li>
+              <li><a href="#">Devolução</a></li>
+              <li><a href="#">Status do Pedido</a></li>
+              <li><a href="#">Opção de Pagamento</a></li>
+            </ul>
+          </div>
+          <div class="footer-col">
+            <h4>Loja</h4>
+            <ul>
+              <li><a href="#">Colecionáveis</li>
+              <li><a href="#">Adaptados</a></li>
+              <li><a href="#">Montáveis</a></li>
+              <li><a href="#">Grande Escala</a></li>
+            </ul>
+          </div>
+          <div class="footer-col">
+            <h4>Siga-nos</h4>
+            <div class="social-links">
+              <a href="https://www.facebook.com"><i class="fab fa-facebook-f"></i></a>
+              <a href="https://twitter.com"><i class="fab fa-twitter"></i></a>
+              <a href="https://www.instagram.com"><i class="fab fa-instagram"></i></a>
+              <a href="https://www.linkedin.com"><i class="fab fa-linkedin-in"></i></a>
+            </div>
+          </div>
+        </div>
+      </div>
+   </footer>
+
+
+    <script src="app.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>

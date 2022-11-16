@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home - AffordableToys</title>
+    <link rel="stylesheet" href="css/css.css">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+</head>
+<body id="u">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
+  
+  
+  <!--Nav Bar--> 
+ <header>
+    <nav class="navbar navbar-expand-lg">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#" id='logo'>AFFORDABLE TOYS</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNavDropdown" >
+            <ul class="navbar-nav ms-auto mb-lg-0 ">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#" id='pagina'>Home</a>
+              </li>
+
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false" id="v">
+                  Produtos
+                </a>
+                <ul class="dropdown-menu" style="background-color: #03555d; ;">
+                  <li><a class="dropdown-item" href="#" id='v'>Adaptados</a></li>
+                  <li><a class="dropdown-item" href="Home/index.html" id='v'>Geral</a></li>
+                </ul>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#" id='v'>Contato</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="Sobre nós/index.html" id='v'>Sobre Nós</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="Cadastro-Login/HTML/Login.Html" id="login">Login</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>   
+    
+ <!--Fim-->
+
+   <!--Carrosel--> 
+   
+        <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="true">
+           <ol class="carousel-indicators">
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+           </ol>
+           <div class="carousel-inner">
+              <div class="carousel-item active">
+                   <img src="css/brinque.jpg" class="d-block w-100" alt="Primeira" style="opacity: 45%;">
+                   <div class="carousel-caption">
+                        <h2>Está na Hora de Brincar</h2>
+                        <p>Nossos brinquedos foram estilizados para se tornarem inclusivos e
+                          adaptados para todos os tipos de deficiência. Estamos revolucionando
+                          a forma de uma criança desenvolver-se e ao mesmo tempo se divertir.
+                          Uma criança deficiente, também brinca.</p>
+                        <a href="#" class="main-btn">Acessar</a>
+                  </div>
+              </div>
+              <!--Segunda-->
+              <div class="carousel-item">
+                    <img src="img/2.jpg" class="d-block w-100" alt="Segunda">
+                    <div class="carousel-caption d-none d-md-block">
+                    <h2>Segunda imagem</h2>
+                    <p>Testando</p>
+                    <a href="#" class="main-btn" style="margin-right: 50em;">Acessar</a>
+                </div>
+               </div>
+               <!--Terceira-->
+               <div class="carousel-item">
+                <img src="img/3.jpg" class="d-block w-100" alt="Terceira">
+               <div class="carousel-caption d-none d-md-block">
+                     <h2>Terceira imagem</h2>
+                     <p>Testando</p>
+                     <a href="#" class="main-btn" style="margin-right: 50em;">Acessar</a>
+               </div>
+              </div>
+          </div>
+          <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </div>
+  <!--Cards-->
+    <section id="cards">
+        <h2>Em Destaque</h2>
+        <p id="subtitle">Os mais populares...</p>
+        <br><br>
+          
+           <div class="container text-center">
+             <div class="row">
+               <div class="col col-lg-3" >
+                    <div class="card">
+                       <img src="img/Cellbit.jpg" class="card-img-top" alt="...">
+                       <div class="card-body">
+                           <h5 class="card-title">Rei dos Plebes</h5>
+                           <p class="card-text">Rafael Lange, o maior odiador de plebes com prime</p>
+                           <a href="#" class="main-btn">Conheça</a>
+                       </div>
+                    </div>
+               </div>
+               
+               <div class="col" >
+                     <div class="card">
+                        <img src="img/Saiko.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                           <h5 class="card-title">Cearense</h5>
+                           <p class="card-text">Apenas o Melhor amigo de Ycarokkkkadasdadsa</p>
+                            <a href="#" class="main-btn" >Conheça</a>
+                         </div>
+                      </div>
+              </div>
+            </div>
+           </div>
+  
+           <img src="img/jOKER.png" id="Joker">
+    </section>
+  
+    <footer class="footer">
+      <div class="container">
+        <div class="row">
+          <div class="col" id="footer-col">
+            <h4>Empresa</h4>
+            <ul>
+              <li><a href="#">Sobre Nós</a></li>
+              <li><a href="#">Nossos Serviços</a></li>
+              <li><a href="#">Pólitica de Privacidade</a></li>
+            </ul>
+          </div>
+          <div class="col" id="footer-col">
+            <h4>Suporte</h4>
+            <ul>
+              <li><a href="#">FAQ</a></li>
+              <li><a href="#">Envio</a></li>
+              <li><a href="#">Devolução</a></li>
+              <li><a href="#">Status do Pedido</a></li>
+              <li><a href="#">Opção de Pagamento</a></li>
+            </ul>
+          </div>
+          <div class="col" id="footer-col">
+            <h4>Loja</h4>
+            <ul>
+              <li><a href="#">Colecionáveis</li>
+              <li><a href="#">Adaptados</a></li>
+              <li><a href="#">Montáveis</a></li>
+              <li><a href="#">Grande Escala</a></li>
+            </ul>
+          </div>
+          <div class="col" id="footer-col">
+            <h4>Nos Siga</h4>
+            <div class="social-links">
+              <a href="#"><i class="fab fa-facebook-f"></i></a>
+              <a href="#"><i class="fab fa-twitter"></i></a>
+              <a href="#"><i class="fab fa-instagram"></i></a>
+              <a href="#"><i class="fab fa-linkedin-in"></i></a>
+            </div>
+          </div>
+        </div>
+      </div>
+   </footer>
+
+
+</body>
+</html>

@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="images/AT (5).png" />
+
+    <title>Affordable Toys</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/footer.css" />
+    <link rel="stylesheet" href="css/navbar.css" />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css"/>
+
+  </head>
+
+  <body>
+    <!-- .menu-openner aparecera no modo mobile -->
+    <header>
+      <nav class="nav-bar">
+        <div class="logo">
+            <a href="#"><h1>AFFORDABLE TOYS</h1></a>
+          </div>
+
+      <div class="nav-list">
+               <ul>
+                  <li class="nav-item"><a href="#" class="nav-link">Início</a></li>
+                  <li class="nav-item"><a href="../Home/index.html" class="nav-link">Produtos</a></li>
+                  <li class="nav-item"><a href="../Contato/index.html" class="nav-link">Contato</a></li>
+                  <li class="nav-item"><a href="../Sobre nós/index.html" class="nav-link">Sobre Nós</a></li>
+               </ul>
+               <div class="login-button">
+                  <button><a href="../Cadastro-Login/HTML/Login.Html">Entrar</a></button></div>
+                  <div class="menu-openner"><span>0</span>🛒</div>
+              
+                  
+                    
+  <div class="mobile-menu-icon">
+      <button onclick="menuShow()"> <img class="icon" src="images/menu_white_36dp.svg"></button">
+      
+              </div>
+
+      </div>
+      </nav>
+
+  </nav>
+  <div class="mobile-menu">
+      <ul>
+          <li class="nav-item"><a href="#" class="nav-link">Início</a></li>
+          <li class="nav-item"><a href="../Home/index.html" class="nav-link">Produtos</a></li>
+          <li class="nav-item"><a href="../Contato/index.html" class="nav-link">Contato</a></li>
+          <li class="nav-item"><a href="../Sobre nós/index.html" class="nav-link">Sobre Nós</a></li>
+      </ul>
+      <div class="login-button"> <button><a href="#">Entrar</a></button></div>
+  </div>
+</div>
+    </header>
+
+    <!-- /menu-openner -->
+
+    <!--Modelos de produtos na lista e no carrinho -->
+    <div class="models">
+      <!--    Produtos na lista -->
+      <div class="produtos-item">
+        <a href="">
+          <div class="produtos-item--img"><img src="" /></div>
+          <div class="produtos-item--add">+</div>
+        </a>
+        <div class="produtos-item--price">R$ --</div>
+        <div class="produtos-item--name">--</div>
+        <div class="produtos-item--desc">--</div>
+      </div>
+
+      <!-- Produtos no carrinho -->
+      <div class="cart--item">
+        <img src="" />
+        <div class="cart--item-nome"></div>
+        <div class="cart--item--qtarea">
+          <button class="cart--item-qtmenos">-</button>
+          <div class="cart--item--qt">1</div>
+          <button class="cart--item-qtmais">+</button>
+        </div>
+      </div>
+    </div>
+    <!-- /models -->
+
+    <!-- conteudo principal -->
+    <main>
+      <h2>Produtos Adaptados</h2>
+
+      <div class="produtos-area"></div>
+    </main>
+    <!-- /conteudo principal -->
+
+    <!-- aside do carrinho -->
+    <aside>
+      <div class="cart--area">
+        <div class="menu-closer">❌</div>
+        <br />
+        <h1>Seus Produtos</h1>
+        <div class="cart"></div>
+        <div class="cart--details">
+          <div class="cart--totalitem subtotal">
+            <span>Subtotal</span>
+            <span>R$ --</span>
+          </div>
+          <div class="cart--totalitem desconto">
+            <span>Desconto</span>
+            <span>R$ --</span>
+          </div>
+          <div class="cart--totalitem total big">
+            <span>Total</span>
+            <span>R$ --</span>
+          </div>
+          <div class="cart--finalizar">Finalizar a compra</div>
+        </div>
+      </div>
+    </aside>
+    <!-- /aside do carrinho -->
+
+    <!-- janela modal .produtosWindowArea -->
+    <div class="produtosWindowArea">
+      <div class="produtosWindowBody">
+        <div class="produtosInfo--cancelMobileButton">Voltar</div>
+        
+        <div class="produtosBig">
+          <img src="" />
+        </div>
+        <div class="produtosInfo">
+          <h1>--</h1>
+          <div class="produtosInfo--desc">--</div>
+          <div class="produtosInfo--sizearea">
+            <div class="produtosInfo--sector">Tamanho</div>
+            <div class="produtosInfo--sizes">
+              <div class="produtosInfo--size"><span>--</span></div>
+            </div>
+          </div>
+          <div class="produtosInfo--pricearea">
+            <div class="produtosInfo--sector">Preço</div>
+            <div class="produtosInfo--price">
+              <div class="produtosInfo--actualPrice">R$ --</div>
+              <div class="produtosInfo--qtarea">
+                <button class="produtosInfo--qtmenos">-</button>
+                <div class="produtosInfo--qt">1</div>
+                <button class="produtosInfo--qtmais">+</button>
+              </div>
+            </div>
+          </div>
+          <div class="produtosInfo--addButton">Adicionar ao carrinho</div>
+          <div class="produtosInfo--cancelButton">Cancelar</div>
+        </div>
+      </div>
+    </div>
+
+    <footer class="footer">
+      <div class="container">
+        <div class="row">
+          <div class="footer-col">
+            <h4>Empresa</h4>
+            <ul>
+              <li><a href="#">Sobre Nós</a></li>
+              <li><a href="#">Nossos Serviços</a></li>
+              <li><a href="#">Pólitica de Privacidade</a></li>
+            </ul>
+          </div>
+          <div class="footer-col">
+            <h4>Suporte</h4>
+            <ul>
+              <li><a href="#">FAQ</a></li>
+              <li><a href="#">Envio</a></li>
+              <li><a href="#">Devolução</a></li>
+              <li><a href="#">Status do Pedido</a></li>
+              <li><a href="#">Opção de Pagamento</a></li>
+            </ul>
+          </div>
+          <div class="footer-col">
+            <h4>Loja</h4>
+            <ul>
+              <li><a href="#">Colecionáveis</li>
+              <li><a href="#">Adaptados</a></li>
+              <li><a href="#">Montáveis</a></li>
+              <li><a href="#">Grande Escala</a></li>
+            </ul>
+          </div>
+          <div class="footer-col">
+            <h4>Siga-nos</h4>
+            <div class="social-links">
+              <a href="https://www.facebook.com"><i class="fab fa-facebook-f"></i></a>
+              <a href="https://twitter.com"><i class="fab fa-twitter"></i></a>
+              <a href="https://www.instagram.com"><i class="fab fa-instagram"></i></a>
+              <a href="https://www.linkedin.com"><i class="fab fa-linkedin-in"></i></a>
+            </div>
+          </div>
+        </div>
+      </div>
+   </footer>
+
+    <!-- /janela modal .produtosWindowArea -->
+
+    <!-- Parte da funcionalidade "V-Libras"-->
+
+    <script src="produtos.js"></script>
+    <script src="js/script.js"></script>
+    <script src="script.js"></script>
+
+    <div vw class="enabled">
+      <div vw-access-button class="active"></div>
+      <div vw-plugin-wrapper>
+        <div class="vw-plugin-top-wrapper"></div>
+      </div>
+    </div>
+    <script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
+    <script>
+      new window.VLibras.Widget("https://vlibras.gov.br/app");
+    </script>
+
+    <!-- Fim da funcionalidade "V-Libras"-->
+  </body>
+</html>
