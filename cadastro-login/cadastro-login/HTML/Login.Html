@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="PT-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../CSS/css.css">
+    <link rel="stylesheet" href="../teste/style.css">
+    
+    <title>Fomulário</title>
+    
+    
+</head>
+<body>
+    <header>
+        <nav class="nav-bar">
+              <div class="logo">
+                  <a href="#"><h1>AFFORDABLE TOYS</h1></a>
+                </div>
+
+            <div class="nav-list">
+                     <ul>
+                        <li class="nav-item"><a href="#" class="nav-link">Início</a></li>
+                        <li class="nav-item"><a href="#" class="nav-link">Produtos</a></li>
+                        <li class="nav-item"><a href="#" class="nav-link">Contato</a></li>
+                        <li class="nav-item"><a href="#" class="nav-link">Sobre Nós</a></li>
+                     </ul>
+                     <div class="login-button">
+                        <button><a href="Login.Html">Entrar</a></button></div>
+                          
+        <div class="mobile-menu-icon">
+            <button onclick="menuShow()"> <img class="icon" src="../IMG/menu_white_36dp.svg"></button">
+            
+                    </div>
+
+            </div>
+            </nav>
+    
+        </nav>
+        <div class="mobile-menu">
+            <ul>
+                <li class="nav-item"><a href="#" class="nav-link">Inicio</a></li>
+                <li class="nav-item"><a href="#" class="nav-link">Produtos</a></li>
+                <li class="nav-item"><a href="#" class="nav-link">Contato</a></li> 
+                <li class="nav-item"><a href="#" class="nav-link">Sobre Nós</a></li> 
+                
+            </ul>
+            <div class="login-button"> <button><a href="#">Entrar</a></button></div>
+        </div>
+    </div>
+    </header>
+    
+<br><br><br>
+<form>
+<div class="main-login">
+    <div class="left-login">
+        <h1 class="logi"> Faça seu login </h1>
+        <img src="login.svg " alt="login">
+    </div>
+    <br><br>
+    <div class="right-login">
+        <div class="card-login">
+            <h1>Login</h1>
+
+            <div class="textfield">
+                <input type="text"  class="form__input" autocomplete="off" placeholder="" id="valor" name="nome">
+                <label for="email" class="form__label"> 
+                     <img src="../IMG/perfil.png " height="25px" >  
+                      Email
+                    </label>
+       
+            </div>
+            <br>
+            <br>
+                <div class="textfield">
+                    <input type="password"id="senha" class="form__input" autocomplete="off" placeholder="" id="senha"name="senha">
+                    <label for="senha"  class="form__label">
+                        <img src="../IMG/padlock.png" height="25px" >
+                        Senha
+                    </label>
+                    
+                </div>
+                <br>
+                <div id="myDialog" style="color: rgb(30, 255, 0);"></div>
+                <div id="myDialog2" style="color: rgb(255, 0, 0);"></div>
+
+                <button class="btn-login" onclick="showDialog(senha)">Entrar</button>
+
+               <div class="link">Ainda não tem uma conta? <a href="Cadastro1.html"> Crie uma já.</a></div>
+        </div>
+    </div>
+</div>
+</form>
+
+
+
+<script src="../JAVASCRIPT/script.js"></script>
+<script>
+    function showDialog(senha) { 
+ if (senha.value == 3333 )
+ {
+   document.querySelector('#myDialog').innerHTML = "Correto";
+ }
+ else{
+    document.querySelector('#myDialog2').innerHTML = "Erro";
+} 
+}
+
+</script>
+</body>
+</html>
