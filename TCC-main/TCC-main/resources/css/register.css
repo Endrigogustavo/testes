@@ -1,0 +1,408 @@
+body {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+  
+  #navbar {
+    justify-content: center; /* Centraliza os itens horizontalmente */
+    overflow: hidden;
+    background-color: #fff;
+    transition: 0.4s;
+    position: fixed;
+    width: 100%;
+    top: -120px;
+    z-index: 99;
+    padding: 30px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+  }
+  
+  #navbar a {
+    color: black;
+    padding: 12px;
+    text-decoration: none;
+    font-size: 18px; 
+    line-height: 25px;
+  }
+  
+  #navbar #logo {
+    transition: 0.4s;
+    margin-top: 100px;
+    margin-bottom: -5px;
+  }
+  
+  #navbar a:hover {
+    font-weight: bold;
+  }
+  
+  #navbar a.active {
+    color: black;
+    font-weight: bold;
+    border-top-style: solid;
+  }
+  
+  #navbar-bottom a:hover {
+    color: black;
+    font-weight: bold;
+    border-top-style: solid;
+  }   
+  
+  .center {
+    margin: auto;
+    width: 60%;
+    text-align: center;
+    padding: 10px;
+  }
+  
+  .linha {
+    border-bottom: 2px solid rgba(128, 128, 128, 0.5);
+    margin: 10px 20px;
+    width: 98%;
+  }
+  
+  #logo {
+    height: 100px;
+    transition: opacity 0.5s;
+    cursor: pointer;
+    margin-bottom: -35px;
+  }
+  
+  .topnav .search-container {
+    float: right;
+  }
+  
+  .search-container {
+      float: right;
+      margin-top: -198px;
+      margin-right: 130px;
+  }
+  
+  .search-container {
+      float: right;
+      margin-top: -95px;
+      margin-right: 130px;
+      margin-bottom: -100px;
+  }
+  
+  .topnav input[type=text] {
+    padding: 6px;
+    font-size: 18px;
+    border: none;
+    background: none;
+    width: 100px;
+    outline: none; /* Remove a borda ao ser clicado */
+  }
+  
+  ::placeholder {
+    color: black; /* cor desejada */
+  }
+  
+  .topnav .search-container button {
+    float: right;
+    padding: 6px 10px;
+    background: #fff;
+    font-size: 17px;
+    border: none;
+    cursor: pointer;
+    background: none;
+  }
+  
+  .topnav .search-container button:hover {
+    background: none;
+  }
+  
+  .icone {
+    font-size: 30px;
+    cursor: pointer;
+    margin-right: 20px;
+  }
+  
+  .icone-container {
+    position: relative;
+    left: 550px;
+    top: -20px;
+  }
+  
+  
+  .container {
+      width: 800px;
+      margin: 0 auto;
+      padding: 20px;
+      border-radius: 5px;
+      margin-top: 250px;
+      margin-bottom: -180px;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+    }
+    
+      form {
+        text-transform: uppercase;
+        margin: 50px auto;
+        padding: 20px;
+        border-radius: 10px;
+        font-weight: 600;
+      }
+  
+      form label {
+      display: block;
+      margin-bottom: 10px;
+      font-size: 20px;
+      }
+    
+    form input[type="text"],
+    form input[type="email"],
+    form input[type="password"] {
+      width: 350px;
+      padding: 10px;
+      margin-bottom: 10px;
+      margin-left: 10px;
+      border: none;
+      border-radius: 5px;
+      background-color: rgba(223, 215, 204, 0.5);
+      font-size: 17px;
+    }
+  
+    form input[type="text"]::placeholder{
+        color: black;
+    }
+    
+    form input[type="submit"] {
+       display: block;
+       width: 200px;
+        padding: 10px;
+        border: none;
+        border-radius: 5px;
+        background-color: rgb(223, 215, 204);
+        color: black;
+        font-weight: bold;
+        cursor: pointer;
+        font-weight: 790;
+        text-transform: uppercase;
+        align-items: center;
+        align-content: center;
+        justify-content: center;
+    }
+    
+    form input[type="submit"]:hover {
+      display: block;
+      width: 200px;
+        padding: 10px;
+        border: none;
+        border-radius: 5px;
+        background-color: rgb(223, 215, 204);
+        color: black;
+        font-weight: bold;
+        cursor: pointer;
+        font-weight: 790;
+        text-transform: uppercase;
+  
+    }
+      
+      .container h1{
+          text-align: left;
+          font-weight: 800;
+          text-transform: uppercase;
+          font-size: 50px;
+          padding-left: 60px;
+        }
+  
+  /* The container */
+  .container-checkbox {
+    display: block;
+    position: absolute;
+    cursor: pointer;
+    font-size: 12px;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+     user-select: none;
+     text-transform: uppercase;
+     font-family: 'Inter', sans-serif;
+     padding-left: 40px;
+     margin-top: -20px;
+  }
+  
+  /* Hide the browser's default checkbox */
+  .container-checkbox input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    height: 0;
+    width: 0;
+  }
+  
+  /* Create a custom checkbox */
+  .checkmark {
+    position: absolute;
+    height: 25px;
+    width: 25px;
+    background-color: #DFD7CC;
+    margin-left: -40px;
+    margin-top: -35px;
+    border-radius: 2px;
+  }
+  
+  /* On mouse-over, add a grey background color */
+  .container-checkbox:hover input ~ .checkmark {
+    background-color: #DFD7CC;
+  }
+  
+  /* When the checkbox is checked, add a blue background */
+  .container-checkbox input:checked ~ .checkmark {
+    background-color: #DFD7CC;
+  }
+  
+  /* Create the checkmark/indicator (hidden when not checked) */
+  .checkmark:after {
+    content: "";
+    position: absolute;
+    display: none;
+  }
+  
+  /* Show the checkmark when checked */
+  .container-checkbox input:checked ~ .checkmark:after {
+    display: block;
+  }
+  
+  /* Style the checkmark/indicator */
+  .container-checkbox .checkmark:after {
+    left: 9px;
+    top: 5px;
+    width: 5px;
+    height: 10px;
+    border: solid black;
+    border-width: 0 3px 3px 0;
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+  }
+  
+  .manter {
+      font-size: 15px;
+      text-transform: none;
+  }
+  
+  .login{
+    font-size: 15px;
+    color: black;
+    text-align: center;
+  }
+  
+  .cadastrar {
+  margin-left: 38%;
+  font-weight: bold;
+  margin-top: 40px;
+  margin-bottom: -30px;
+  }
+  
+  /* Rodapé */
+  .desc-footer1 {
+    color: #FFF;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+  
+    text-align: center;
+    font-family: 'Inter', sans-serif;
+    text-transform: uppercase;
+  }
+  
+  .desc-footer2 {
+    color: #FFF;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+  
+    text-align: center;
+    font-family: 'Inter', sans-serif;
+    text-transform: uppercase;
+  }
+  
+  .desc-footer3 {
+    color: #FFF;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+  
+    text-align: center;
+    font-family: 'Inter', sans-serif;
+    text-transform: uppercase;
+  } 
+  
+  .desc-footer4 {
+    color: #FFF;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    color: black; /* Define a cor do link como preto */
+    text-decoration: none; /* Remove a sublinhado padrão do link */
+  
+    text-align: center;
+    font-family: 'Inter', sans-serif;
+    text-transform: uppercase;
+  } 
+  
+  .linha-footer {
+     height: 1px;
+     margin-top: 50px;
+     margin-bottom: 50px;
+     border-bottom: 1px solid white;
+     width: 100%;
+     display: flex;
+     justify-content: center;
+  }
+  
+  .container-footer {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-wrap: wrap;
+  }
+  
+  .container-footer div {
+      margin: 0 10px;
+  }
+  
+  .logo_branca{
+      width: 125px;
+      vertical-align: center;
+      justify-content: center;
+  }
+  
+  footer {
+      margin-top: 300px;
+      background-color: #000000;
+      padding: 20px;
+  }
+  
+  footer a {
+      text-transform: lowercase;
+      text-decoration: none; /* Remover o sublinhado */
+  }
+  
+  .titulo-footer {
+      margin-top: 20px;
+      margin-bottom: 30px;
+      text-align: center;
+      font-size: 15px;
+  }
+  
+  .link {
+    color: white; /* Define a cor do link como preto */
+    text-decoration: none; /* Remove a sublinhado padrão do link */
+  }
+  
+  .imagem {
+    text-align: left;
+    margin-top: 10px;
+    margin-left: 220px;
+  }
+  
+  .titulo {
+    padding-left: 450px;
+    float: left;
+    margin-top: -240px;
+    text-transform: uppercase;
+  }  

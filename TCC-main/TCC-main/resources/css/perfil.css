@@ -1,0 +1,452 @@
+/*
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+*/
+
+body {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+  
+  .content {
+    margin-top: 300px;
+  }
+  
+  #navbar {
+    justify-content: center; /* Centraliza os itens horizontalmente */
+    overflow: hidden;
+    background-color: #fff;
+    transition: 0.4s;
+    position: fixed;
+    width: 100%;
+    top: -120px;
+    z-index: 99;
+    padding: 30px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+  }
+  
+  #navbar a {
+    color: black;
+    padding: 12px;
+    text-decoration: none;
+    font-size: 18px; 
+    line-height: 25px;
+  }
+  
+  #navbar #logo {
+    transition: 0.4s;
+    margin-top: 100px;
+    margin-bottom: -5px;
+  }
+  
+  #navbar a:hover {
+    font-weight: bold;
+  }
+  
+  #navbar a.active {
+    color: black;
+    font-weight: bold;
+    border-top-style: solid;
+  }
+  
+  #navbar-bottom a:hover {
+    color: black;
+    font-weight: bold;
+    border-top-style: solid;
+  }   
+  
+  .center {
+    margin: auto;
+    width: 60%;
+    text-align: center;
+    padding: 10px;
+  }
+  
+  .linha {
+    border-bottom: 2px solid rgba(128, 128, 128, 0.5);
+    margin: 10px 20px;
+    width: 98%;
+  }
+  
+  #logo {
+    height: 100px;
+    transition: opacity 0.5s;
+    cursor: pointer;
+    margin-bottom: -35px;
+  }
+  
+  .topnav .search-container {
+    float: right;
+  }
+  
+  .search-container {
+      float: right;
+      margin-top: -28px;
+      margin-right: 130px;
+  }
+  
+  .topnav input[type=text] {
+    padding: 6px;
+    font-size: 18px;
+    border: none;
+    background: none;
+    width: 100px;
+    outline: none; /* Remove a borda ao ser clicado */
+  }
+  
+  ::placeholder {
+    color: black; /* cor desejada */
+  }
+  
+  .topnav .search-container button {
+    float: right;
+    padding: 6px 10px;
+    background: #fff;
+    font-size: 17px;
+    border: none;
+    cursor: pointer;
+    background: none;
+  }
+  
+  .topnav .search-container button:hover {
+    background: none;
+  }
+  
+  .icone {
+    font-size: 30px;
+    cursor: pointer;
+    margin-right: 20px;
+  }
+  
+  .icone-container {
+    position: relative;
+    left: 550px;
+    top: -20px;
+  }
+  
+      .circle {
+        width: 200px;
+        height: 200px;
+        background-color: rgba(223, 215, 204, 0.664);
+        border-radius: 50%;
+        display: inline-flex;
+        justify-content: center;
+        align-items: center;
+        margin: 0 auto;
+        margin-left: 150px;
+        margin-top: 20px;
+        cursor: pointer;
+      }
+  
+      .circle span {
+        font-size: 48px;
+        color: black;
+        cursor: pointer;
+      }
+  
+  
+  
+  
+  /* Rodapé */
+  .desc-footer1 {
+    color: #FFF;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+  
+    text-align: center;
+    font-family: 'Inter', sans-serif;
+    text-transform: uppercase;
+  }
+  
+  .desc-footer2 {
+    color: #FFF;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+  
+    text-align: center;
+    font-family: 'Inter', sans-serif;
+    text-transform: uppercase;
+  }
+  
+  .desc-footer3 {
+    color: #FFF;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+  
+    text-align: center;
+    font-family: 'Inter', sans-serif;
+    text-transform: uppercase;
+  } 
+  
+  .desc-footer4 {
+    color: #FFF;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    color: black; /* Define a cor do link como preto */
+    text-decoration: none; /* Remove a sublinhado padrão do link */
+  
+    text-align: center;
+    font-family: 'Inter', sans-serif;
+    text-transform: uppercase;
+  } 
+  
+  .linha-footer {
+     height: 1px;
+     margin-top: 50px;
+     margin-bottom: 50px;
+     border-bottom: 1px solid white;
+     width: 100%;
+     display: flex;
+     justify-content: center;
+  }
+  
+  .container-footer {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-wrap: wrap;
+  }
+  
+  .container-footer div {
+      margin: 0 10px;
+  }
+  
+  .logo_branca{
+      width: 125px;
+      vertical-align: center;
+      justify-content: center;
+  }
+  
+  footer {
+      margin-top: 300px;
+      background-color: #000000;
+      padding: 20px;
+  }
+  
+  footer a {
+      text-transform: lowercase;
+      text-decoration: none; /* Remover o sublinhado */
+  }
+  
+  .titulo-footer {
+      margin-top: 20px;
+      margin-bottom: 30px;
+      text-align: center;
+      font-size: 15px;
+  }
+  
+  .link {
+    color: white; /* Define a cor do link como preto */
+    text-decoration: none; /* Remove a sublinhado padrão do link */
+  }
+  
+  
+  /* Indicador */
+  #indicator {
+    position: absolute;
+    top: 240px;
+    left: 365px;
+    background-color: transparent;
+    color: #333;
+    font-size: 14px;
+  }
+  
+  #indicator ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    align-items: center;
+  }
+  
+  #indicator li {
+    margin-right: 10px;
+  }
+  
+  #indicator a {
+    color: #333;
+    text-decoration: none;
+    padding: 5px;
+    text-transform: uppercase;
+    font-family: 'Inter', sans-serif;
+  }
+  
+  #arrow {
+    position: relative;
+    width: 0;
+    height: 0;
+    border-top: 4px solid transparent;
+    border-bottom: 4px solid transparent;
+    border-left: 4px solid #333;
+    margin-left: -5px;
+  }
+  
+  .btn3{
+          border-radius: 6px;
+          border: none;
+          text-align: center;
+          text-decoration: none;
+          display: inline-block;
+          font-size: 16px;
+          cursor: pointer;
+          width: 40%;
+          height: 40px;
+          align-items: center;
+          text-align: center;
+          align-content: center;
+          vertical-align: middle;
+          display: flex; 
+          background-color: rgba(223, 215, 204, 0.2);
+      }
+  
+      .content h1{
+          text-align: center;
+          font-weight: 800;
+          text-transform: uppercase;
+          font-size: 40px;
+          padding-left: 60px;
+        }
+  
+      .forms {
+        text-transform: uppercase;
+        margin: 50px auto;
+        padding: 20px;
+        border-radius: 10px;
+        font-weight: 600;
+      }
+  
+      .forms label {
+          font-size: 20px;
+          padding-left: 150px;
+      }
+  
+      .forms input[type="text"] {
+        width: 350px;
+        padding: 10px;
+        margin-bottom: 10px;
+        border: none;
+        border-radius: 5px;
+        background-color: rgba(223, 215, 204, 0.5);
+        font-size: 17px;
+        color: black;
+      }
+  
+      .forms input[type="text"]::placeholder{
+        color: black;
+      }
+  
+      .forms input[type="text1"] {
+        padding: 10px;
+        margin-bottom: 10px;
+        border: none;
+        border-radius: 5px;
+        background-color: rgba(223, 215, 204, 0.5);
+        font-size: 17px;
+        width: 350px;
+      }
+  
+      .forms button {
+        display: block;
+        width: 200px;
+        padding: 10px;
+        border: none;
+        border-radius: 5px;
+        background-color: rgb(223, 215, 204);
+        color: black;
+        font-weight: bold;
+        cursor: pointer;
+        font-weight: 790;
+        text-transform: uppercase;
+      }
+  
+      .forms .btn2{
+          padding-left: 600px;
+      }
+  
+      .forms button:hover {
+        background-color: rgba(223, 215, 204, 0.664);
+      }
+  
+  
+     /* Estilos para a área de filtro */
+     .filtro {
+        margin-top: -250px;
+        width: 400px;
+        height: 855px;
+        background-color: #ffffff;
+        margin-left: -80px;
+        position: absolute;
+        border-right: 2px solid rgba(128, 128, 128, 0.5);
+      }
+  
+      .container-comb {
+        display: flex;
+        align-items: flex-start;
+        position: relative;
+        margin-left: 20px;
+        margin-top: -100px;
+      }
+  
+      /*USUÁRIO do Menu Lateral*/
+      .usu{
+        display: block;
+        color: black;
+        margin-left: 160px;
+        text-decoration: none;
+      }
+  
+      .usu p{
+        display: block;
+        color: black;
+        margin-top: 40;
+        margin-left: 25px;
+        font-size: 12px;
+      }
+  
+      .usu h2{
+         margin-top: 25px;
+         margin-left: 0px;
+         text-transform: uppercase;
+      }
+  
+      .menu {
+        display: block;
+        color: black;
+        padding-top: 50px;
+        margin-left: 130px;
+        text-decoration: none;
+        cursor: pointer;
+      }
+  
+      .menu a{
+        color: #000000;
+        text-decoration: none;
+        text-transform: uppercase;
+        cursor: pointer;
+        font-weight: 700;
+        padding-bottom: 15px;
+        font-size: 20px;
+     }
+  
+     .menu:hover{
+        display: block;
+        color:rgba(128, 128, 128, 0.5);
+        text-decoration: none;
+        text-transform: uppercase;
+     }
+  
+     .top-line {
+      border-bottom:3px solid rgba(128, 128, 128, 0.5);
+      margin-left: -100px;
+      width: 370px;
+      margin-top: 15px;
+     }  
